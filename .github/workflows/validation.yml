@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: ${{ matrix.tools }}
-        uses: vanga/pyaction/.github@main
+        uses: vanga/pyaction@main
         with:
           ${{ matrix.tools }}: true
           args: ${{ matrix.args }}
