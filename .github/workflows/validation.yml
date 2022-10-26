@@ -11,8 +11,8 @@ jobs:
         include:
           - tools: pytest
             args: -m not integration and not gpu
-          - tools: pytest
-            args: -m integration
+#           - tools: pytest
+#             args: -m integration
     steps:
       - uses: actions/checkout@v2
       - name: ${{ matrix.tools }}
